@@ -786,9 +786,17 @@ p {
 /*===========================
       04.ABOUT css 
 ===========================*/
+.container_area {
+  position: relative;
+}
+
 .about_area {
   background-color: #F9F9F9;
   position: relative;
+}
+
+.about_row2 {
+  flex-direction: row-reverse;
 }
 
 .about_image {
@@ -799,11 +807,18 @@ p {
   height: 100%;
 }
 
+.about_image.about_image2 {
+  right: 50%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about_image {
     width: 100%;
     height: 500px;
     position: relative;
+  }
+  .about_image.about_image2 {
+    right: 0;
   }
 }
 
@@ -812,6 +827,9 @@ p {
     width: 100%;
     height: 400px;
     position: relative;
+  }
+  .about_image.about_image2 {
+    right: 0;
   }
 }
 
@@ -886,6 +904,11 @@ p {
 
 .about_content {
   padding-right: 50px;
+}
+
+.about_content.about_content2 {
+  padding-right: 0px;
+  padding-left: 50px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1315,6 +1338,18 @@ p {
 /*===========================
     10.CONTACT css 
 ===========================*/
+.contact_gform {
+  width: 700px;
+  height: 1300px;
+}
+
+@media (max-width: 767px) {
+  .contact_gform {
+    width: 100%;
+    height: 1400px;
+  }
+}
+
 .contact_area {
   position: relative;
   z-index: 5;
